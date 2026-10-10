@@ -19,7 +19,7 @@ Welcome to Nokia Menu
 14 Services
 15 Sim sevices
 """)
-    choice = int(input())
+    choice = int(input('Select a Number: '))
 
     match choice:
         case 1: 
@@ -52,7 +52,7 @@ Welcome to Nokia Menu
             print("Opening Services")
         case 15: 
             print("Opening Sim_ sevices")
-        case 0: 
+        case _: 
             print("Invalid options")
 
 def Phone_book():
@@ -71,7 +71,7 @@ Phonebookmenu
 10 Speed dials
 11 Voice tags                          
 """)
-    choice = int(input())
+    choice = int(input('Select a Number: '))
 
     match choice:
         case 1: 
@@ -98,7 +98,7 @@ Options
 3 Memory status
 """)
 
-            Options_choice = int(input())
+            Options_choice = int(input('Select a Number: '))
             match options_choice:
                     case 1: 
                         print("Memory in use")
@@ -106,14 +106,14 @@ Options
                         print("Type of view")
                     case 3: 
                         print("Memory status")
-                    case 0:
+                    case _:
                          print("Invalid options")
 
         case 10: 
             print("Speed dials")
         case 11: 
             print("Voice tags")
-        case 0: 
+        case _: 
             print("Invalid options")
 
 def Messages():
@@ -169,7 +169,7 @@ Messagesset
                             print("Message sent as")
                         case 3: 
                             print("Message validity")
-                        case 0: 
+                        case _: 
                             print("Invalid options")
 
                 case 2: 
@@ -188,7 +188,7 @@ Messagescommon
                             print("Reply via same centre")
                         case 3: 
                             print("Character support")
-                        case 0: 
+                        case _: 
                             print("Invalid options")
 
 
@@ -198,7 +198,7 @@ Messagescommon
             print("Voice mailbox number")
         case 10: 
             print("Service command editor")
-        case 0: 
+        case _: 
             print("Invalid options")
 
 def Call_register():
@@ -246,7 +246,7 @@ Showcallduration
                     print("Dialed calls' duration")
                 case 5: 
                     print("clear timers")
-                case 0: 
+                case _: 
                     print("Invalid options")
 
         case 6: 
@@ -264,7 +264,7 @@ Showcallcosts
                     print("All calls' cost")
                 case 3: 
                     print("Clear counters")
-                case 0: 
+                case _: 
                     print("Invalid options")
 
         case 7: 
@@ -280,12 +280,12 @@ Callcostsettings
                     print("Call cost limit")
                 case 2: 
                     print("Show costs in")
-                case 0: 
+                case _: 
                     print("Invalid options")
 
         case 8: 
             print("Prepaid credit ")
-        case 0: 
+        case _: 
             print("Invalid options")
 
 def Tones():
@@ -321,7 +321,7 @@ Tonesmenu
             print("Vibrating alert")
         case 8: 
             print("Screen saver")
-        case 0: 
+        case _: 
             print("Invalid options")
 
 def Settings():
@@ -360,7 +360,7 @@ Callsettings
                     print("Phone line in use")
                 case 6: 
                     print("Automatic answer")
-                case 0:
+                case _:
                     print("Invalid options")
 
         case 2:
@@ -385,7 +385,7 @@ Phonesettings
                     print("Network selection")
                 case 5: 
                     print("Confirm SIM service actions")
-                case 0: 
+                case _: 
                     print("Invalid options")
 
         case 3:
@@ -413,7 +413,7 @@ Securitysettings
                     print("Security level")
                 case 6: 
                     print("Change access codes")
-                case 0: 
+                case _: 
                     print("Invalid options")
 
         case 4: 
@@ -441,7 +441,7 @@ Musicrmenu
             print("Recorder")
         case 4: 
             print("Track list")
-        case 0: 
+        case _: 
             print("Invalid options")
 
 def Clock():
@@ -470,7 +470,7 @@ Clockrmenu
             print("Countdown timer")
         case 6: 
             print("Auto update of date and time")
-        case 0: 
+        case _: 
             print("Invalid options")
 
 main() 
