@@ -53,7 +53,7 @@ Select an option:"""
         case 15:
             sim_services_menu()
         case 0:
-            main_menu()
+            print("Goodbye")
         case _:
             main_menu()
 
